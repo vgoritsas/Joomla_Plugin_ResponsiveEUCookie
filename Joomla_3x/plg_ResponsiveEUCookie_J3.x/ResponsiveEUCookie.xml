@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="system" method="upgrade">
+    <name>RESPONSIVE_EU_COOKIE</name>
+     <description>The Plugin displays information about the use of cookies</description>
+    <author>Evanggelos L. Goritsas</author>
+    <creationDate>2015-06-01</creationDate>
+    <copyright>Copyright (C) 2015 Vgoritsas. All rights reserved.</copyright>
+    <authorEmail>info@vgoritsas.com</authorEmail>
+    <authorUrl>http://www.vgoritsas.com</authorUrl>
+    <version>1.1.0</version>
+    <files>
+        <filename plugin="ResponsiveEUCookie">ResponsiveEUCookie.php</filename>
+        <filename>ResponsiveEUCookie.xml</filename>
+        <folder>assets</folder>
+        <filename>index.html</filename>
+        <folder>language</folder>
+    </files>
+
+             <languages folder="language/">
+              <language tag="en-GB">en-GB/en-GB.plg_system_ResponsiveEUCookie.ini</language>
+              <language tag="en-GB">en-GB/en-GB.plg_system_ResponsiveEUCookie.sys.ini</language>
+             </languages>
+    <config>
+         <fields name="params">
+            <fieldset name="basic">
+                    <field name="max_width" type="text"  default="100%" label="RESPONSIVE_EU_COOKIE_MAX_WIDTH" />
+                    <field name="position" type="radio" class="btn-group btn-group-yesno" default="top" label="RESPONSIVE_EU_COOKIE_POSITION">
+                        <option value="top">RESPONSIVE_EU_COOKIE_POSITION_TOP</option>
+                        <option value="bottom">RESPONSIVE_EU_COOKIE_POSITION_BOTTOM</option>
+                        <option value="bottom-right">RESPONSIVE_EU_COOKIE_POSITION_BOTTOM_RIGHT</option>
+                    </field>
+
+                    <field name="align" type="radio" class="btn-group btn-group-yesno" default="center" label="RESPONSIVE_EU_COOKIE_TEXT_ALIGN">
+                        <option value="left">RESPONSIVE_EU_COOKIE_TEXT_ALIGN_LEFT</option>
+                        <option value="center">RESPONSIVE_EU_COOKIE_TEXT_ALIGN_CENTER</option>
+                        <option value="right">RESPONSIVE_EU_COOKIE_TEXT_ALIGN_RIGHT</option>
+                    </field>
+                    <field name="msg" type="textarea" rows="10" cols="5" label="RESPONSIVE_EU_COOKIE_MESSAGE" default="Our website uses cookies in order to provide you with the best browsing experience. By using this website you agree to this usage of cookies."/>
+                    <field name="bg" type="color" label="RESPONSIVE_EU_COOKIE_BG" default="#000"/>
+                    <field name="color" type="color" label="RESPONSIVE_EU_COOKIE_COLOR" default="#fff"/>
+                    <field name="fontSize" type="text" label="RESPONSIVE_EU_COOKIE_FONT_SIZE" default="12px"/>
+                    <field name="font" type="text" label="RESPONSIVE_EU_COOKIE_FONT_FAMILY" default="Arial"/>
+                    <field name="padding" type="text" label="RESPONSIVE_EU_COOKIE_PADDING" default="5px"/>
+
+                    <field name="bottomBorderColor" type="color" label="RESPONSIVE_EU_COOKIE_BORDER_BOTTOM" default="#006b05"/>
+                    <field name="topBorderColor" type="color" label="RESPONSIVE_EU_COOKIE_BORDER_TOP"  default="#006b05" />
+                    <field name="bottomRightBorderColor" type="color" label="RESPONSIVE_EU_COOKIE_BORDER_BOTTOM_RIGHT"  default="#006b05" />
+
+                    <field name="btnsBg" type="color" label="RESPONSIVE_EU_COOKIE_BG_BUTTONS" default="#787676"/>
+                    <field name="btnsColor" type="color" label="RESPONSIVE_EU_COOKIE_ACCEPT_COLOR" default="#fff"/>
+                    <field name="btnOkText" type="text" label="RESPONSIVE_EU_COOKIE_ACCEPT_TEXT" default="Ok, I've understand!"/>
+                    <field name="btnOkBgHover" type="color" label="RESPONSIVE_EU_COOKIE_ACCEPT_BG_HOVER" default="#1a6906"/>
+                    <field name="btnOkHoverColor" type="color" label="RESPONSIVE_EU_COOKIE_ACCEPT_COLOR_HOVER" default="#fff"/>
+                    <field name="btnMoreInfoText" type="text" label="RESPONSIVE_EU_COOKIE_MORE_INFO_TEXT" default="More Info"/>
+                    <field name="btnInfoBgHover" type="color" label="RESPONSIVE_EU_COOKIE_MORE_INFO_BG_HOVER" default="#7a0000" />
+                    <field name="btnInfoHoverColor" type="color" label="RESPONSIVE_EU_COOKIE_MORE_INFO_COLOR_HOVER" default="#fff" />
+                    <field name="urlMoreInfo" type="text" label="RESPONSIVE_EU_COOKIE_MORE_INFO_URL" default="#"/>
+                    <field name="showBtnMoreInfo" type="radio" class="btn-group btn-group-yesno" default="1" label="RESPONSIVE_EU_COOKIE_SHOW_MORE_INFO">
+                        <option value="0">RESPONSIVE_EU_COOKIE_SHOW_MORE_INFO_YES</option>
+                        <option value="1">RESPONSIVE_EU_COOKIE_SHOW_MORE_INFO_NO</option>
+                    </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
